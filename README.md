@@ -1,4 +1,9 @@
 # TeamAvatar
 
 # Josh Williamson (s4477841) - https://github.com/JWilliamson9/
+<<<<<<< HEAD
 # Josh Robertson (s4478561) - https://github.com/jjrobe99
+=======
+# Josh Robertson (s4478561) - https://github.com/jjrobe99
+# Andrew Shaw (s44887401) - https://github.com/andrewshaw23 
+>>>>>>> Andrew
