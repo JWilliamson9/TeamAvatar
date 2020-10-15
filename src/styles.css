@@ -23,17 +23,12 @@ position: absolute;
   height: 100%;
 }
 
-#dialog {
-  /**height: 700px;
-  width: 300px;**/
-  background-color: #e1f0f7;
-  opacity: 93%;
-  position: fixed;
-  top: 20%;
-  margin-top: -100px;
-  left: 47%;
-  margin-left: -100px;
-  display: flex; 
+#mainBox {
+  height: 750px;
+  width: 340px;
+  background: rgba(248, 254, 255, 0.952);
+  position: absolute;
+  display: none; 
   justify-content: center; 
   align-items: center;
   padding: 5px;
@@ -43,6 +38,74 @@ position: absolute;
 
 h2 {
   margin: 0%;
+  padding-left: 2%;
+  font-family: 'Open Sans', 'Segoe UI', sans-serif;
+  font-weight: 600;
+  font-size: 27px;
+}
+
+.timerImage {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+}
+
+.closeButton {
+  width: fit-content;
+  text-align: center;
+  padding: 5px 30px;
+  margin: auto;
+  margin-top: 15px;
+  position: relative;
   font-family: 'Open Sans', 'Segoe UI', sans-serif;
   font-weight: 300;
+  font-size: 14px;
+  background-color: #BBBBBB;
+  border-radius: 5px;
+  z-index: 1000;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+.wideButton {
+  width: 300px;
+  text-align: center;
+  padding: 7px 0px;
+  margin: auto;
+  margin-top: 180px;
+  position: relative;
+  font-family: 'Open Sans', 'Segoe UI', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  background-color: #5AC8FA;
+  border-radius: 5px;
+  z-index: 1000;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+}
+
+p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  font-family: 'Open Sans', 'Segoe UI', sans-serif;
+}
+
+.pSmall {
+  font-size: 16px;
+}
+
+.awarenessText {
+  margin: auto;
+  width: fit-content;
+  font-family: 'Open Sans', 'Segoe UI', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  padding: 0px 30px;
+
+}
+
+.timeText {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 0.8;
+  margin: 15px 0px;
 }

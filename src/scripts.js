@@ -1,9 +1,9 @@
 $(document).ready(function () {
-
-    setInterval(function () { $("#dialog").fadeIn(); }, 5000)
+    
+    setInterval(function () { $("#mainBox").fadeIn(); }, 5000)
 
 });
 
 function Close() {
-    $("#dialog").fadeOut();
+    $("#mainBox").fadeOut();
 }
