@@ -35,6 +35,6 @@ position: absolute;
            left: 50%;
            margin-left: -100px;
            display: none;
-           padding: 20px;
+           padding: 10px;
            z-index: 999;
        }
