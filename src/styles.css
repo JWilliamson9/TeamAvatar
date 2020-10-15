@@ -23,18 +23,26 @@ position: absolute;
   height: 100%;
 }
 
-#dialog
-       {
-           height: 200px;
-           width: 200px;
-           background-color: #c8c8c8;
-           border: 1px solid black;
-           position: fixed;
-           top: 50%;
-           margin-top: -100px;
-           left: 50%;
-           margin-left: -100px;
-           display: none;
-           padding: 20px;
-           z-index: 999;
-       }
+#dialog {
+  /**height: 700px;
+  width: 300px;**/
+  background-color: #e1f0f7;
+  opacity: 93%;
+  position: fixed;
+  top: 20%;
+  margin-top: -100px;
+  left: 47%;
+  margin-left: -100px;
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+  padding: 5px;
+  z-index: 999;
+  border-radius: 12px;
+}
+
+h2 {
+  margin: 0%;
+  font-family: 'Open Sans', 'Segoe UI', sans-serif;
+  font-weight: 300;
+}
