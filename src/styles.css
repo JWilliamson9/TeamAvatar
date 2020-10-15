@@ -22,3 +22,19 @@ position: absolute;
   align-items: center; 
   height: 100%;
 }
+
+#dialog
+       {
+           height: 200px;
+           width: 200px;
+           background-color: #c8c8c8;
+           border: 1px solid black;
+           position: fixed;
+           top: 50%;
+           margin-top: -100px;
+           left: 50%;
+           margin-left: -100px;
+           display: none;
+           padding: 20px;
+           z-index: 999;
+       }
