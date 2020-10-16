@@ -26,7 +26,7 @@ position: absolute;
 #mainBox {
   height: 750px;
   width: 340px;
-  background: rgba(248, 254, 255, 0.952);
+  background: rgba(241, 244, 245, 0.952);
   position: absolute;
   display: none; 
   justify-content: center; 
@@ -41,7 +41,7 @@ h2 {
   padding-left: 2%;
   font-family: 'Open Sans', 'Segoe UI', sans-serif;
   font-weight: 600;
-  font-size: 27px;
+  font-size: 28px;
 }
 
 .timerImage {
