@@ -13,6 +13,7 @@
     <div class="phoneFullDisplay">
       <img class="iphoneImage" src="src/images/iphoneframe.png">
       <iframe class="facebookDisplay" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fapple%2F&tabs=timeline&width=392&height=850&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=151946368730652" width="392" height="850" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+      <!--Awareness Page-->
       <div id="mainBox" class="awarePage" style="display: none">
         <h2>BreakTime</h2>
         <img class="timerImage" src="src/images/timer.png">
@@ -30,13 +31,15 @@
           <span>Close</span>
         </div>
       </div>
+
+      <!--Create Page-->
       <div id="mainBox" class="createPage" style="display: none">
         <h2>BreakTime</h2>
         
-        <div class="wideButton">
+        <div class="wideButton" id="inviteFriendsButton">
           <span>Invite your friends!</b></span>
         </div>
-        <div class="wideButton">
+        <div class="wideButton" id="meTimeButton">
           <span>Have some me time!</b></span>
         </div>
         <div onclick="Close()" class="closeButton">
