@@ -93,6 +93,24 @@ h2 {
   color: white;
 }
 
+.widePicnicButton {
+  width: 300px;
+  text-align: center;
+  padding: 11px 0px;
+  margin: auto;
+  margin-top: 60px;
+  position: relative;
+  font-family: 'Open Sans', 'Segoe UI', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  background-color: #5AC8FA;
+  border-radius: 5px;
+  z-index: 1000;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+  transition-duration: 0.4s;
+  color: white;
+}
+
 #inviteFriendsButton {
   background-color: #3f8fb4;
 }
@@ -137,11 +155,68 @@ p {
 .column {
   float: left;
   width: 30%;
-  padding: 5px;
+  padding: 3px;
 }
+
+
 
 /* Clear floats after image containers */
 .row::after {
   clear: both;
   display: table;
 }
+
+/* Justify Text below selection images*/
+.img-with-text {
+  font-size: auto;
+  text-align: center;
+  width: 30%;
+}
+
+/* Display text as a block*/
+.img-with-text img {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Title for picnic page */
+.picnic-h3 {
+  margin: 0%;
+  padding-left: 2%;
+  font-family: 'Open Sans', 'Segoe UI', sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+label {
+  float: left;
+  clear: left;
+  font-family: 'Open Sans', 'Segoe UI', sans-serif;
+  font-weight: 200;
+}
+
+input {
+float: right;
+width: 70%;
+border-radius: 5px;
+border: none;
+}
+
+#message {
+  border-radius: 5px;
+  height: 50px;
+  resize: none;
+  display: inline-block;
+  margin-top: 5px;
+  width: 98%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#map {
+  height: 200px;
+  /* The height is 200 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
+}
+

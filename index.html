@@ -8,6 +8,8 @@
   <link rel="stylesheet" href="./src/styles.css">
   <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="./src/scripts.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBIwzALxUPNbatRBj3Xi1Uhp0fFzwWNBkE&callback=initMap&libraries=&v=weekly"
+  defer></script>
 </head>
   <body>
     <div class="phoneFullDisplay">
@@ -23,6 +25,20 @@
           <p>Experts found that people spend, on average, <b>3 hrs and 15 mins</b> on their phone per day, so why not take a break?</p>
           <p class="pSmall"><br>For more information on smartphone addictions <a href="https://www.helpguide.org/articles/addictions/smartphone-addiction.htm" target="_blank" alt="smartphone addiction information" style="text-decoration: underline;">click here</a></p>
           <p class="pSmall" style="text-align: center;"><br>Select an activity to begin</p>
+          <div class="row">
+            <div onclick="openPicnicPage()" class="column img-with-text">
+              <img src="src/images/picnic.jpg" alt="Picnic" style="width:100%">
+              <p>Picnic</p>
+            </div>
+            <div class="column img-with-text">
+              <img src="src/images/beachwalk.jpg" alt="Beach Walk" style="width:100%">
+              <p>Beach Walk</p>
+            </div>
+            <div class="column img-with-text">
+              <img src="src/images/hike.jpg" alt="Hike" style="width:100%">
+              <p>Hiking</p>
+            </div>
+          </div>
         </div>
         <div onclick="openCreatePage()" class="wideButton" id="createButton">
           <span>Or you can <b>create your own activity</b></span>
@@ -46,6 +62,47 @@
           <span>Close</span>
         </div>
       </div>
+
+      <!--Picnic Page-->
+      <div id="mainBox" class="picnicPage" style="display: none">
+        <h2>BreakTime</h2>
+        <div id="map"></div>
+        <h3 class="picnic-h3">Picnic</h3>
+        <div class="row">
+          <div class="column img-with-text">
+            <img src="src/images/SunnyCloudy.png" alt="Sun with Cloud" style="width:50%">
+            <p>Partly Cloudy</p>
+          </div>
+          <div class="column img-with-text">
+            <!-- Josh please find a sitting png like those other ones-->
+            <img src="src/images/Walking.png" alt="Sitting Symbol" style="width:50%">
+            <p>Sitting</p>
+          </div>
+          <div class="column img-with-text">
+            <img src="src/images/car.png" alt="Car" style="width:50%">
+            <p>10 Minute Drive</p>
+          </div>
+        </div>
+        <form>
+          <label for="location">Location:</label><input type="text" value="Mt Coot-tha Botanical Gardens" id="location" name="location">
+          <label for="time">Time:</label><input type="text" value="3:00pm" id="time" name="time">
+          <label for="need">You'll Need:</label><input type="text"  value="Picnic Basket, Blanket and Food" id="need" name="need">
+          <label for="optional">Optional:</label><input type="text" value="Speaker" id="optional" name="optional">
+          <textarea id="message" maxLength="100" placeholder="Add a message..."></textarea>
+        </form>
+          <div class="widePicnicButton" id="inviteFriendsButton">
+          <span>Invite your friends!</b></span>
+        </div>
+        <div class="wideButton" id="meTimeButton">
+          <span>Have some me time!</b></span>
+        </div>
+        <div onclick="picnicClose()" class="closeButton">
+          <span>Close</span>
+        </div>
+      </div>
+
+</div>
+
     </div>
   </body>
 </html>
