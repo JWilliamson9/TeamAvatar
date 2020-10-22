@@ -124,6 +124,11 @@ h2 {
   cursor: pointer;
 }
 
+.picnicHover:hover {
+  background-color: #52A4C1;
+  cursor: pointer;
+}
+
 p {
   margin-block-start: 0em;
   margin-block-end: 0em;
