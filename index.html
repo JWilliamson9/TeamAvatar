@@ -13,33 +13,39 @@
     <div class="phoneFullDisplay">
       <img class="iphoneImage" src="src/images/iphoneframe.png">
       <iframe class="facebookDisplay" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fapple%2F&tabs=timeline&width=392&height=850&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=151946368730652" width="392" height="850" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
-      <div id="mainBox" style="display: none">
+      <!--Awareness Page-->
+      <div id="mainBox" class="awarePage" style="display: none">
         <h2>BreakTime</h2>
         <img class="timerImage" src="src/images/timer.png">
-          <div class="awarenessText">
-            <p>You've been on your phone for</p>
-            <p class="timeText">4 hrs <br>24 mins.<br></p>
-            <p>Experts found that people spend, on average, <b>3 hrs and 15 mins</b> on their phone per day, so why not take a break?</p>
-            <p class="pSmall"><br>For more information on smartphone addictions <a href="https://www.helpguide.org/articles/addictions/smartphone-addiction.htm" target="_blank" alt="smartphone addiction information" style="text-decoration: underline;">click here</a></p>
-            <p class="pSmall" style="text-align: center;"><br>Select an activity to begin</p>
-            <div class="row">
-              <div class="column">
-                <img src="src/images/picnic.jpg" alt="Picnic" style="width:100%">
-              </div>
-              <div class="column">
-                <img src="src/images/hike.jpg" alt="Hike" style="width:100%">
-              </div>
-              <div class="column">
-                <img src="src/images/beachwalk.jpg" alt="Beach Walk" style="width:100%">
-              </div>
-            </div>
-          <div class="wideButton">
-            <span>Or you can <b>create your own activity</b></span>
-          </div>
-          <div onclick="Close()" class="closeButton">
-            <span>Close</span>
-          </div>
+        <div class="awarenessText">
+          <p>You've been on your phone for</p>
+          <p class="timeText">4 hrs <br>24 mins.<br></p>
+          <p>Experts found that people spend, on average, <b>3 hrs and 15 mins</b> on their phone per day, so why not take a break?</p>
+          <p class="pSmall"><br>For more information on smartphone addictions <a href="https://www.helpguide.org/articles/addictions/smartphone-addiction.htm" target="_blank" alt="smartphone addiction information" style="text-decoration: underline;">click here</a></p>
+          <p class="pSmall" style="text-align: center;"><br>Select an activity to begin</p>
         </div>
+        <div onclick="openCreatePage()" class="wideButton" id="createButton">
+          <span>Or you can <b>create your own activity</b></span>
+        </div>
+        <div onclick="awareClose()" class="closeButton">
+          <span>Close</span>
+        </div>
+      </div>
+
+      <!--Create Page-->
+      <div id="mainBox" class="createPage" style="display: none">
+        <h2>BreakTime</h2>
+        
+        <div class="wideButton" id="inviteFriendsButton">
+          <span>Invite your friends!</b></span>
+        </div>
+        <div class="wideButton" id="meTimeButton">
+          <span>Have some me time!</b></span>
+        </div>
+        <div onclick="createClose()" class="closeButton">
+          <span>Close</span>
+        </div>
+      </div>
     </div>
   </body>
 </html>

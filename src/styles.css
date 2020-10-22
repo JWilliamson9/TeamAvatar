@@ -93,6 +93,14 @@ h2 {
   color: white;
 }
 
+#inviteFriendsButton {
+  background-color: #3f8fb4;
+}
+
+#meTimeButton {
+  margin-top: 15px;
+}
+
 .wideButton:hover {
   background-color: #52A4C1;
   cursor: pointer;
