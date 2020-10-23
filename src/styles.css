@@ -39,7 +39,7 @@ position: absolute;
 h1 {
   font-family: 'Open Sans', 'Segoe UI', sans-serif;
   font-weight: 300;
-  font-size: 28px;
+  font-size: 26px;
   margin: 0%;
 }
 
@@ -48,7 +48,7 @@ h2 {
   padding-left: 2%;
   font-family: 'Open Sans', 'Segoe UI', sans-serif;
   font-weight: 600;
-  font-size: 28px;
+  font-size: 26px;
 }
 
 p {
@@ -182,6 +182,7 @@ p {
   padding: 10px;
   z-index: 1000;
   border-radius: 12px;
+  overflow: auto;
 }
 
 .miniMap {
