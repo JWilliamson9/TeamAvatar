@@ -171,11 +171,33 @@
                   </div>
                 </div>
               </div>
-              <div class="wideButton" id="sendInvButton">
-                <span>Send out invitations!</b></span>
+              <div class="wideButton" id="sendInvButton" onclick="openCalPage()">
+                <span>Send out invitations!</span>
               </div>
               <div onclick="inviteClose()" class="closeButton">
                 <span>Close</span>
+              </div>
+            </div>
+            <!--Add to Calendar Page-->
+            <div id="mainBox" class="calendarPage" style="display: none; height: 340px">
+              <h2>BreakTime</h2>
+              <div id="activitySummary">
+                <div id="miniMap2">
+                </div>
+                <h1><div id="calActTitle">Activity Name</div></h1>
+                <p class="summaryText" id="calActLocation">Location Name</p> 
+                <p class="summaryText" id="calActTime">Time</p> 
+                <p class="summaryText" id="calActWeather">Weather</p>
+                <p class="summaryText" id="calActDrive">XX minute drive</p> 
+                <div id="calSummaryPics">
+                </div>
+              </div>
+              
+              <div onclick="addedToCal()" class="wideButton" id="addCalButton">
+                <span>Add to Calendar!</span>
+              </div>
+              <div onclick="calClose()" class="closeButton">
+                <span>Done</span>
               </div>
             </div>
     </div>
