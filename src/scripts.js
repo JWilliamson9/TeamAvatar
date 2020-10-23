@@ -1,6 +1,11 @@
 var openPage = false;
 var inviteList = [];
 var invitedFriend1 = false;
+var invitedFriend2 = false;
+var invitedFriend3 = false;
+var invitedFriend4 = false;
+var invitedFriend5 = false;
+var invitedFriend6 = false;
 
 
 $(document).ready(function () {
@@ -53,13 +58,28 @@ function openInvitePage() {
     console.log(openPage);
 }
 
+function displayInvFriends() {
+    $('#summaryPics').empty();
+    for( var i = 0; i < inviteList.length; i++){ 
+        if (inviteList.length > 0) {
+            $('#summaryPics').append(inviteList[i]);
+            inviteList[i].className = "summaryAvatarPic";
+            console.log("not empty List")
+        }   
+    }
+    if (inviteList.length == 0) {
+            $('#summaryPics').empty();
+            console.log("empty List");
+        }
+}
+
 function inviteFriend1() {
     if (!invitedFriend1) {
         invitedFriend1 = true;
         document.getElementById("friend1").style.backgroundColor='#3f8fb4';
         document.getElementById("friend1").innerHTML = "Invited";
-        inviteList.push(document.getElementById("friendPic1"));
-        console.log("friend1 " + invitedFriend1);
+        inviteList.push(document.getElementById("friendPic1").cloneNode(true));
+        displayInvFriends();
         console.log(inviteList);
     } else {
         invitedFriend1 = false;
@@ -67,12 +87,133 @@ function inviteFriend1() {
             console.log(i.id);
             if (i.id = "friendPic1") { 
                 inviteList.splice(i, 1); i--; 
+                console.log("removed friend 1");
+                break;
             }
         }
         document.getElementById("friend1").style.backgroundColor='#5AC8FA';
         document.getElementById("friend1").innerHTML = "Invite";
-        console.log("friend1 " + invitedFriend1);
+        displayInvFriends();
         console.log(inviteList);
     }
-   
+}
+
+function inviteFriend2() {
+    if (!invitedFriend2) {
+        invitedFriend2 = true;
+        document.getElementById("friend2").style.backgroundColor='#3f8fb4';
+        document.getElementById("friend2").innerHTML = "Invited";
+        inviteList.push(document.getElementById("friendPic2").cloneNode(true));
+        displayInvFriends();
+        console.log(inviteList);
+    } else {
+        invitedFriend2 = false;
+        for( var i = 0; i < inviteList.length; i++){ 
+            console.log(i.id);
+            if (i.id = "friendPic2") { 
+                inviteList.splice(i, 1); i--;
+                break;
+            }
+        }
+        document.getElementById("friend2").style.backgroundColor='#5AC8FA';
+        document.getElementById("friend2").innerHTML = "Invite";
+        displayInvFriends();
+        console.log(inviteList);
+    }
+}
+
+function inviteFriend3() {
+    if (!invitedFriend3) {
+        invitedFriend3 = true;
+        document.getElementById("friend3").style.backgroundColor='#3f8fb4';
+        document.getElementById("friend3").innerHTML = "Invited";
+        inviteList.push(document.getElementById("friendPic3").cloneNode(true));
+        displayInvFriends();
+        console.log(inviteList);
+    } else {
+        invitedFriend3 = false;
+        for( var i = 0; i < inviteList.length; i++){ 
+            console.log(i.id);
+            if (i.id = "friendPic3") { 
+                inviteList.splice(i, 1); i--;
+                break;
+            }
+        }
+        document.getElementById("friend3").style.backgroundColor='#5AC8FA';
+        document.getElementById("friend3").innerHTML = "Invite";
+        displayInvFriends();
+        console.log(inviteList);
+    }
+}
+
+function inviteFriend4() {
+    if (!invitedFriend4) {
+        invitedFriend4 = true;
+        document.getElementById("friend4").style.backgroundColor='#3f8fb4';
+        document.getElementById("friend4").innerHTML = "Invited";
+        inviteList.push(document.getElementById("friendPic4").cloneNode(true));
+        displayInvFriends();
+        console.log(inviteList);
+    } else {
+        invitedFriend4 = false;
+        for( var i = 0; i < inviteList.length; i++){ 
+            console.log(i.id);
+            if (i.id = "friendPic4") { 
+                inviteList.splice(i, 1); i--;
+                break;
+            }
+        }
+        document.getElementById("friend4").style.backgroundColor='#5AC8FA';
+        document.getElementById("friend4").innerHTML = "Invite";
+        displayInvFriends();
+        console.log(inviteList);
+    } 
+}
+
+function inviteFriend5() {
+    if (!invitedFriend5) {
+        invitedFriend5 = true;
+        document.getElementById("friend5").style.backgroundColor='#3f8fb4';
+        document.getElementById("friend5").innerHTML = "Invited";
+        inviteList.push(document.getElementById("friendPic5").cloneNode(true));
+        displayInvFriends();
+        console.log(inviteList);
+    } else {
+        invitedFriend5 = false;
+        for( var i = 0; i < inviteList.length; i++){ 
+            console.log(i.id);
+            if (i.id = "friendPic5") { 
+                inviteList.splice(i, 1); i--;
+                break;
+            }
+        }
+        document.getElementById("friend5").style.backgroundColor='#5AC8FA';
+        document.getElementById("friend5").innerHTML = "Invite";
+        displayInvFriends();
+        console.log(inviteList);
+    } 
+}
+
+function invitedFriend6() {
+    if (!invitedFriend6) {
+        invitedFriend6 = true;
+        document.getElementById("friend6").style.backgroundColor='#3f8fb4';
+        document.getElementById("friend6").innerHTML = "Invited";
+        inviteList.push(document.getElementById("friendPic6").cloneNode(true));
+        displayInvFriends();
+        console.log(inviteList);
+    } else {
+        invitedFriend6 = false;
+        for( var i = 0; i < inviteList.length; i++){ 
+            console.log(i.id);
+            if (i.id = "friendPic6") { 
+                inviteList.splice(i, 1); i--;
+                break;
+            }
+        }
+        document.getElementById("friend6").style.backgroundColor='#5AC8FA';
+        document.getElementById("friend6").innerHTML = "Invite";
+        displayInvFriends();
+        console.log(inviteList);
+    } 
 }

@@ -198,7 +198,7 @@ p {
 }
 
 .friendName {
-  font-size: 16px;
+  font-size: 14px;
   display: inline-block;
   flex-basis: 126px;
   order: 2;
@@ -214,4 +214,22 @@ p {
   background-color: #5AC8FA;
   display: inline-block;
   order: 3;
+}
+
+#summaryPics {
+  display: flex;
+  flex-direction: row;
+  margin: 0%;
+}
+
+.summaryAvatarPic {
+  margin-top: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  height: 40px;
+}
+
+.friendList {
+  overflow: auto;
+  height: 335px;
 }
