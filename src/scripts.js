@@ -84,11 +84,11 @@ function openInvitePageFromPicnic() {
     $(".invitePage").fadeIn();
     openPage = true;
     console.log(openPage);
-    activityTitle = String(document.getElementById("activityTitle").innerHTML);
-    activityWeather = String(document.getElementById("activityWeather").innerHTML);
-    activityDriveLength = String(document.getElementById("activityDriveLength").innerHTML);
-    activityTime = document.getElementById("time").value;
-    activityLocation = document.getElementById("location").value;
+    activityTitle = String(document.getElementById("activityTitlepic").innerHTML);
+    activityWeather = String(document.getElementById("activityWeatherpic").innerHTML);
+    activityDriveLength = String(document.getElementById("activityDriveLengthpic").innerHTML);
+    activityTime = document.getElementById("timepic").value;
+    activityLocation = document.getElementById("locationpic").value;
     $("#invActTitle").replaceWith(activityTitle);
     document.getElementById("invActLocation").innerHTML = activityLocation;
     document.getElementById("invActTime").innerHTML = activityTime;
