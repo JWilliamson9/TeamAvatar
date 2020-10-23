@@ -39,6 +39,7 @@ function createClose() {
 
 function picnicClose() {
     $(".picnicPage").fadeOut();
+}
     
 function inviteClose() {
     $(".invitePage").fadeOut();
@@ -58,6 +59,7 @@ function openPicnicPage() {
     $(".awarePage").fadeOut();
     $(".awarePage").hide();
     $(".picnicPage").fadeIn();
+}
     
 function openInvitePage() {
     $(".createPage").fadeOut();
@@ -240,5 +242,5 @@ function inviteFriend6() {
         document.getElementById("friend6").innerHTML = "Invite";
         displayInvFriends();
         console.log(inviteList);
-    } 
+    }   
 }
