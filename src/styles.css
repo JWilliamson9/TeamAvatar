@@ -279,6 +279,7 @@ border: none;
 }
 
 #message {
+  font-family: 'Open Sans', 'Segoe UI', sans-serif;
   border-radius: 5px;
   height: 50px;
   resize: none;
