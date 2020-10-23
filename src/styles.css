@@ -185,10 +185,9 @@ p {
   overflow: auto;
 }
 
-.miniMap {
-  height: 90px;
+#miniMap {
+  height: 110px;
   width: 110px;
-  background: rgb(206, 238, 247);
   text-align: center;
   float: right;
 }
@@ -303,6 +302,7 @@ border: none;
   width: 100%;
   /* The width is the width of the web page */
 }
+
 
 .friendName {
   font-size: 14px;
