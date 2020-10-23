@@ -106,6 +106,25 @@ function openInvitePageFromPicnic() {
     document.getElementById("invActDrive").innerHTML = activityDriveLength;
 }
 
+function openCalPage() {
+    $(".invitePage").fadeOut();
+    $(".invitePage").hide();
+    document.getElementById("calSummaryPics").innerHTML = document.getElementById("summaryPics").innerHTML
+    $(".calendarPage").fadeIn();
+    openPage = true;
+    console.log(openPage);
+    document.getElementById("calActTitle").innerHTML = activityTitle;
+    document.getElementById("calActLocation").innerHTML = activityLocation;
+    document.getElementById("calActTime").innerHTML = activityTime;
+    document.getElementById("calActWeather").innerHTML = activityWeather;
+    document.getElementById("calActDrive").innerHTML = activityDriveLength;
+}
+
+function addedToCal() {
+    document.getElementById("addCalButton").innerHTML = "Added to Calendar!";
+    document.getElementById("addCalButton").style.backgroundColor='#3f8fb4';
+}
+
 // Initialize and add the map
 function initMap() {
     // The location of the centre of Australia
@@ -118,32 +137,32 @@ function initMap() {
     
     // The create your own  activity map marker, positioned at the centre of Australia
     const marker = new google.maps.Marker({
-      position: auscentre,
-      map: map,
+        position: auscentre,
+        map: map,
     });
 
     const miniMap = new google.maps.Map(document.getElementById("miniMap"), {
         zoom: 3,
         center: auscentre,
-      });
-      
-      // The create your own  activity map marker, positioned at the centre of Australia
-      const miniMarker = new google.maps.Marker({
+    });
+    
+    // The create your own  activity map marker, positioned at the centre of Australia
+    const miniMarker = new google.maps.Marker({
         position: auscentre,
         map: miniMap,
-      });
+    });
 
     // The location of Brisbane Botantical Gardens
     const botgardensbris = { lat: -27.475892, lng: 152.975028 };
     // The map, centered at Brisbane Botantical Gardens
     const map2 = new google.maps.Map(document.getElementById("map2"), {
-      zoom: 16,
-      center: botgardensbris,
+        zoom: 16,
+        center: botgardensbris,
     });
     // The marker, positioned at Mt Coot-tha Botatnical Gardens
     const marker2 = new google.maps.Marker({
-      position: botgardensbris,
-      map: map2,
+        position: botgardensbris,
+        map: map2,
     });
 }
 

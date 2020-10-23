@@ -329,6 +329,12 @@ border: none;
   margin: 0%;
 }
 
+#calSummaryPics {
+  display: flex;
+  flex-direction: row;
+  margin: 0%;
+}
+
 .summaryAvatarPic {
   margin-top: 10px;
   margin-right: 10px;
@@ -343,4 +349,9 @@ border: none;
 
 #activityTitle {
   margin-left: 15px;
+}
+
+
+#addCalButton {
+  margin-top: 5px;
 }
