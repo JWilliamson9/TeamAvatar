@@ -130,7 +130,7 @@ function inviteFriend1() {
     } else {
         invitedFriend1 = false;
         for( var i = 0; i < inviteList.length; i++){ 
-            console.log(i.id);
+            console.log(inviteList[i].id);
             if (i.id = "friendPic1") { 
                 inviteList.splice(i, 1); i--; 
                 console.log("removed friend 1");
@@ -155,8 +155,8 @@ function inviteFriend2() {
     } else {
         invitedFriend2 = false;
         for( var i = 0; i < inviteList.length; i++){ 
-            console.log(i.id);
-            if (i.id = "friendPic2") { 
+            console.log(inviteList[i].id);
+            if (inviteList[i].id = "friendPic2") { 
                 inviteList.splice(i, 1); i--;
                 break;
             }
@@ -179,8 +179,8 @@ function inviteFriend3() {
     } else {
         invitedFriend3 = false;
         for( var i = 0; i < inviteList.length; i++){ 
-            console.log(i.id);
-            if (i.id = "friendPic3") { 
+            console.log(inviteList[i].id);
+            if (inviteList[i].id = "friendPic3") { 
                 inviteList.splice(i, 1); i--;
                 break;
             }
@@ -203,8 +203,8 @@ function inviteFriend4() {
     } else {
         invitedFriend4 = false;
         for( var i = 0; i < inviteList.length; i++){ 
-            console.log(i.id);
-            if (i.id = "friendPic4") { 
+            console.log(inviteList[i].id);
+            if (inviteList[i].id = "friendPic4") { 
                 inviteList.splice(i, 1); i--;
                 break;
             }
@@ -227,8 +227,8 @@ function inviteFriend5() {
     } else {
         invitedFriend5 = false;
         for( var i = 0; i < inviteList.length; i++){ 
-            console.log(i.id);
-            if (i.id = "friendPic5") { 
+            console.log(inviteList[i].id);
+            if (inviteList[i].id = "friendPic5") { 
                 inviteList.splice(i, 1); i--;
                 break;
             }
@@ -251,8 +251,8 @@ function inviteFriend6() {
     } else {
         invitedFriend6 = false;
         for( var i = 0; i < inviteList.length; i++){ 
-            console.log(i.id);
-            if (i.id = "friendPic6") { 
+            console.log(inviteList[i].id);
+            if (inviteList[i].id = "friendPic6") { 
                 inviteList.splice(i, 1); i--;
                 break;
             }
