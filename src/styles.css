@@ -161,7 +161,7 @@ p {
 }
 
 #sendInvButton {
-  margin-top: 15px;
+  margin-top: 5px;
 }
 
 .wideButton:hover {
@@ -175,7 +175,7 @@ p {
 }
 
 #activitySummary {
-  height: 150px;
+  height: 165px;
   width: 300px;
   background: rgb(243, 247, 248);
   margin: 10px auto;
