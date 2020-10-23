@@ -75,20 +75,35 @@ function openInvitePage() {
 
 // Initialize and add the map
 function initMap() {
+    // The location of the centre of Australia
+    const auscentre = { lat: -25.947028, lng: 133.209639 };
+    // The map, centered at the centre of Australia
+    const map = new google.maps.Map(document.getElementById("map"), {
+      zoom: 3,
+      center: auscentre,
+    });
+    
+    // The create your own  activity map marker, positioned at the centre of Australia
+    const marker = new google.maps.Marker({
+      position: auscentre,
+      map: map,
+    });
+
     // The location of Brisbane Botantical Gardens
     const botgardensbris = { lat: -27.475892, lng: 152.975028 };
     // The map, centered at Brisbane Botantical Gardens
-    const map = new google.maps.Map(document.getElementById("map"), {
+    const map2 = new google.maps.Map(document.getElementById("map2"), {
       zoom: 16,
       center: botgardensbris,
     });
-    // The marker, positioned at Uluru
-    const marker = new google.maps.Marker({
+    // The marker, positioned at Mt Coot-tha Botatnical Gardens
+    const marker2 = new google.maps.Marker({
       position: botgardensbris,
-      map: map,
+      map: map2,
     });
-  }
-  
+}
+
+
 function displayInvFriends() {
     $('#summaryPics').empty();
     for( var i = 0; i < inviteList.length; i++){ 

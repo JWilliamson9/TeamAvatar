@@ -51,11 +51,33 @@
       <!--Create Page-->
       <div id="mainBox" class="createPage" style="display: none">
         <h2>BreakTime</h2>
-        
-        <div onclick="openInvitePage()" class="wideButton" id="inviteFriendsButton">
+        <h3 class="picnic-h3">Create your own activity</h3>
+        <div id="map"></div>
+        <div class="row">
+          <div class="column img-with-text">
+            <img src="src/images/SunnyCloudy.png" alt="Sun with Cloud" style="width:50%">
+            <p>Partly Cloudy</p>
+          </div>
+          <div class="column img-with-text">
+            <img src="src/images/Walking.png" alt="Walking Symbol" style="width:50%">
+            <p>Walking</p>
+          </div>
+          <div class="column img-with-text">
+            <img src="src/images/car.png" alt="Car" style="width:50%">
+            <p>10 Minute Drive</p>
+          </div>
+        </div>
+        <form>
+          <label for="location">Location:</label><input type="text" placeholder="Enter a location..." value="" id="location" name="location">
+          <label for="time">Time:</label><input type="text" placeholder="Enter a time..." value="" id="time" name="time">
+          <label for="need">You'll Need:</label><input type="text"  placeholder="Enter any items needed..." value="" id="need" name="need">
+          <label for="optional">Optional:</label><input type="text" placeholder="Enter any optional items" value="" id="optional" name="optional">
+          <textarea id="message" maxLength="100" placeholder="Add a message..."></textarea>
+        </form>
+        <div onclick="openInvitePage()" class="wideActivityButton" id="inviteFriendsButton">
           <span>Invite your friends!</b></span>
         </div>
-        <div class="wideButton" id="meTimeButton">
+        <div class="wideActivityButton" id="meTimeButton">
           <span>Have some me time!</b></span>
         </div>
         <div onclick="createClose()" class="closeButton">
@@ -67,15 +89,14 @@
       <div id="mainBox" class="picnicPage" style="display: none">
         <h2>BreakTime</h2>
         <h3 class="picnic-h3">Picnic</h3>
-        <div id="map"></div>
+        <div id="map2"></div>
         <div class="row">
           <div class="column img-with-text">
             <img src="src/images/SunnyCloudy.png" alt="Sun with Cloud" style="width:50%">
             <p>Partly Cloudy</p>
           </div>
           <div class="column img-with-text">
-            <!-- Josh please find a sitting png like those other ones-->
-            <img src="src/images/Walking.png" alt="Sitting Symbol" style="width:50%">
+            <img src="src/images/Picnic.png" alt="Picnic Symbol" style="width:50%">
             <p>Sitting</p>
           </div>
           <div class="column img-with-text">
@@ -90,10 +111,10 @@
           <label for="optional">Optional:</label><input type="text" value="Speaker" id="optional" name="optional">
           <textarea id="message" maxLength="100" placeholder="Add a message..."></textarea>
         </form>
-          <div class="widePicnicButton" id="inviteFriendsButton">
+          <div class="wideActivityButton" id="inviteFriendsButton">
           <span>Invite your friends!</b></span>
         </div>
-        <div class="wideButton" id="meTimeButton">
+        <div class="wideActivityButton" id="meTimeButton">
           <span>Have some me time!</b></span>
         </div>
         <div onclick="picnicClose()" class="closeButton">
