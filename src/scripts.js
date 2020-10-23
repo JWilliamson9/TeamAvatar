@@ -61,6 +61,8 @@ function openPicnicPage() {
     $(".awarePage").fadeOut();
     $(".awarePage").hide();
     $(".picnicPage").fadeIn();
+    openPage = true;
+    console.log(openPage);
 }
     
 function openInvitePage() {
