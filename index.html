@@ -52,7 +52,7 @@
       <div id="mainBox" class="createPage" style="display: none">
         <h2>BreakTime</h2>
         
-        <div class="wideButton" id="inviteFriendsButton">
+        <div onclick="openInvitePage()" class="wideButton" id="inviteFriendsButton">
           <span>Invite your friends!</b></span>
         </div>
         <div class="wideButton" id="meTimeButton">
@@ -103,6 +103,60 @@
 
 </div>
 
+      <!--Invite Page-->
+      <div id="mainBox" class="invitePage" style="display: none">
+        <h2>BreakTime</h2>
+        <div id="activitySummary">
+          <div class="miniMap">
+            <p>Mini Map</p>
+          </div>
+          <h1>Activity Name</h1>
+          <p class="summaryText">Location Name @ Time<br>Weather<br>XX minute drive</p>  
+          <div id="summaryPics">
+          </div>
+        </div>
+        <div id="friendInvBox">
+          <h1 style="font-size: 26px; margin-bottom: 5px;">Friends</h1>
+          <div class="friendList">
+            <div class="friendRecord">
+              <img class="avatarPic" src="src/images/avatarDarkBlue.png" id="friendPic1">
+              <p class="friendName">John Smith</p>
+              <div class="inviteButton" onclick="inviteFriend1()" id="friend1"><span>Invite</span></div>
+            </div>
+            <div class="friendRecord">
+              <img class="avatarPic" src="src/images/avatarSkyBlue.png" id="friendPic2">
+              <p class="friendName">Andrew Davies</p>
+              <div class="inviteButton" onclick="inviteFriend2()" id="friend2"><span>Invite</span></div>
+            </div>
+            <div class="friendRecord">
+              <img class="avatarPic" src="src/images/avatarOrange.png" id="friendPic3">
+              <p class="friendName">Tessa James</p>
+              <div class="inviteButton" onclick="inviteFriend3()" id="friend3"><span>Invite</span></div>
+            </div>
+            <div class="friendRecord">
+              <img class="avatarPic" src="src/images/avatarYellow.png" id="friendPic4">
+              <p class="friendName">Jack Goodman</p>
+              <div class="inviteButton" onclick="inviteFriend4()" id="friend4"><span>Invite</span></div>
+            </div>
+            <div class="friendRecord">
+              <img class="avatarPic" src="src/images/avatarGreen.png" id="friendPic5">
+              <p class="friendName">Jesse Hamilton</p>
+              <div class="inviteButton" onclick="inviteFriend5()" id="friend5"><span>Invite</span></div>
+            </div>
+            <div class="friendRecord">
+              <img class="avatarPic" src="src/images/avatarPink.png" id="friendPic6">
+              <p class="friendName">Amy Roberts</p>
+              <div class="inviteButton" onclick="inviteFriend6()" id="friend6"><span>Invite</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="wideButton" id="sendInvButton">
+          <span>Send out invitations!</b></span>
+        </div>
+        <div onclick="inviteClose()" class="closeButton">
+          <span>Close</span>
+        </div>
+      </div>
     </div>
   </body>
 </html>

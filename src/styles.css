@@ -36,12 +36,53 @@ position: absolute;
   border-radius: 12px;
 }
 
+h1 {
+  font-family: 'Open Sans', 'Segoe UI', sans-serif;
+  font-weight: 300;
+  font-size: 28px;
+  margin: 0%;
+}
+
 h2 {
   margin: 0%;
   padding-left: 2%;
   font-family: 'Open Sans', 'Segoe UI', sans-serif;
   font-weight: 600;
   font-size: 28px;
+}
+
+p {
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  font-family: 'Open Sans', 'Segoe UI', sans-serif;
+}
+
+.pSmall {
+  font-size: 16px;
+}
+
+.awarenessText {
+  margin: auto;
+  width: fit-content;
+  font-family: 'Open Sans', 'Segoe UI', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  padding: 0px 30px;
+
+}
+
+.timeText {
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 0.8;
+  margin: 15px 0px;
+}
+
+.summaryText {
+  font-weight: 300;
+  font-size: 14px;
+  margin: 0%;
+  color: #6f6f6f;
 }
 
 .timerImage {
@@ -119,6 +160,10 @@ h2 {
   margin-top: 15px;
 }
 
+#sendInvButton {
+  margin-top: 15px;
+}
+
 .wideButton:hover {
   background-color: #52A4C1;
   cursor: pointer;
@@ -135,18 +180,51 @@ p {
   font-family: 'Open Sans', 'Segoe UI', sans-serif;
 }
 
-.pSmall {
-  font-size: 16px;
+#activitySummary {
+  height: 150px;
+  width: 300px;
+  background: rgb(243, 247, 248);
+  margin: 10px auto;
+  padding: 10px;
+  z-index: 1000;
+  border-radius: 12px;
 }
 
-.awarenessText {
+.miniMap {
+  height: 90px;
+  width: 110px;
+  background: rgb(206, 238, 247);
+  text-align: center;
+  float: right;
+}
+
+#friendInvBox {
+  height: 380px;
+  width: 300px;
+  background: rgb(243, 247, 248);
+  margin: 10px auto;
+  padding: 10px;
+  z-index: 1000;
+  border-radius: 12px;
+}
+
+.friendRecord {
   margin: auto;
-  width: fit-content;
+  width: 270px;
+  height: 60px;
   font-family: 'Open Sans', 'Segoe UI', sans-serif;
   font-weight: 300;
-  font-size: 20px;
-  padding: 0px 30px;
+  font-size: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
 
+.avatarPic {
+  height: 50px;
+  margin-right: 15px;
+  display: inline-block;
+  order: 1;
 }
 
 .timeText {
@@ -162,8 +240,6 @@ p {
   width: 30%;
   padding: 3px;
 }
-
-
 
 /* Clear floats after image containers */
 .row::after {
@@ -225,3 +301,39 @@ border: none;
   /* The width is the width of the web page */
 }
 
+.friendName {
+  font-size: 14px;
+  display: inline-block;
+  flex-basis: 126px;
+  order: 2;
+}
+
+.inviteButton {
+  width: 70px;
+  text-align: center;
+  padding: 5px 12px;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+  color: white;
+  cursor: pointer;
+  background-color: #5AC8FA;
+  display: inline-block;
+  order: 3;
+}
+
+#summaryPics {
+  display: flex;
+  flex-direction: row;
+  margin: 0%;
+}
+
+.summaryAvatarPic {
+  margin-top: 10px;
+  margin-right: 10px;
+  display: inline-block;
+  height: 40px;
+}
+
+.friendList {
+  overflow: auto;
+  height: 335px;
+}
