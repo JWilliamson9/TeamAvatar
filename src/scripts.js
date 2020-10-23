@@ -9,8 +9,8 @@ var invitedFriend6 = false;
 var activityTitle = "Activity Name";
 var activityWeather = "Sunny";
 var activityDriveLength = "11 minute drive";
-var activityTime = "12:00pm"
-var activityLocation = "My House"
+var activityTime = "12:00pm";
+var activityLocation = "My House";
 
 
 $(document).ready(function () {
