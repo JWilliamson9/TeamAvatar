@@ -39,6 +39,8 @@ function createClose() {
 
 function picnicClose() {
     $(".picnicPage").fadeOut();
+    openPage = false;
+    console.log(openPage);
 }
     
 function inviteClose() {

@@ -174,12 +174,6 @@ p {
   cursor: pointer;
 }
 
-p {
-  margin-block-start: 0em;
-  margin-block-end: 0em;
-  font-family: 'Open Sans', 'Segoe UI', sans-serif;
-}
-
 #activitySummary {
   height: 150px;
   width: 300px;
