@@ -76,6 +76,16 @@ function openInvitePage() {
     $(".invitePage").fadeIn();
     openPage = true;
     console.log(openPage);
+    activityTitle = String(document.getElementById("activityTitle").innerHTML);
+    activityWeather = String(document.getElementById("activityWeather").innerHTML);
+    activityDriveLength = String(document.getElementById("activityDriveLength").innerHTML);
+    activityTime = document.getElementById("time").value;
+    activityLocation = document.getElementById("location").value;
+    $("#invActTitle").replaceWith(activityTitle);
+    document.getElementById("invActLocation").innerHTML = activityLocation;
+    document.getElementById("invActTime").innerHTML = activityTime;
+    document.getElementById("invActWeather").innerHTML = activityWeather;
+    document.getElementById("invActDrive").innerHTML = activityDriveLength;
 }
 
 function openInvitePageFromPicnic() {
