@@ -85,15 +85,15 @@
         </div>
       </div>
 
-      <!--Picnic Page-->
+      <!--Picnic Page //class="picnic-h3"-->
       <div id="mainBox" class="picnicPage" style="display: none">
         <h2>BreakTime</h2>
-        <h3 class="picnic-h3">Picnic</h3>
-        <div id="map2"></div>
+        <h1 id="activityTitle">Picnic</h1>
+        <div id="map"></div>
         <div class="row">
           <div class="column img-with-text">
             <img src="src/images/SunnyCloudy.png" alt="Sun with Cloud" style="width:50%">
-            <p>Partly Cloudy</p>
+            <p id="activityWeather">Partly Cloudy</p>
           </div>
           <div class="column img-with-text">
             <img src="src/images/Picnic.png" alt="Picnic Symbol" style="width:50%">
@@ -101,17 +101,17 @@
           </div>
           <div class="column img-with-text">
             <img src="src/images/car.png" alt="Car" style="width:50%">
-            <p>10 Minute Drive</p>
+            <p id="activityDriveLength">10 Minute Drive</p>
           </div>
         </div>
         <form>
-          <label for="location">Location:</label><input type="text" value="Mt Coot-tha Botanical Gardens" id="location" name="location">
+          <label for="location">Location:</label><input type="text" value="Mt Coot-tha Gardens" id="location" name="location">
           <label for="time">Time:</label><input type="text" value="3:00pm" id="time" name="time">
           <label for="need">You'll Need:</label><input type="text"  value="Picnic Basket, Blanket and Food" id="need" name="need">
           <label for="optional">Optional:</label><input type="text" value="Speaker" id="optional" name="optional">
           <textarea id="message" maxLength="100" placeholder="Add a message..."></textarea>
         </form>
-          <div class="wideActivityButton" id="inviteFriendsButton">
+          <div onclick="openInvitePageFromPicnic()" class="wideActivityButton" id="inviteFriendsButton">
           <span>Invite your friends!</b></span>
         </div>
         <div class="wideActivityButton" id="meTimeButton">
@@ -129,8 +129,11 @@
                 <div class="miniMap">
                   <p>Mini Map</p>
                 </div>
-                <h1>Activity Name</h1>
-                <p class="summaryText">Location Name @ Time<br>Weather<br>XX minute drive</p>  
+                <h1><div id="invActTitle">Activity Name</div></h1>
+                <p class="summaryText" id="invActLocation">Location Name</p> 
+                <p class="summaryText" id="invActTime">Time</p> 
+                <p class="summaryText" id="invActWeather">Weather</p>
+                <p class="summaryText" id="invActDrive">XX minute drive</p> 
                 <div id="summaryPics">
                 </div>
               </div>

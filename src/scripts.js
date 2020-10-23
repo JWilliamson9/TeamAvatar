@@ -6,6 +6,11 @@ var invitedFriend3 = false;
 var invitedFriend4 = false;
 var invitedFriend5 = false;
 var invitedFriend6 = false;
+var activityTitle = "Activity Name";
+var activityWeather = "Sunny";
+var activityDriveLength = "11 minute drive";
+var activityTime = "12:00pm"
+var activityLocation = "My House"
 
 
 $(document).ready(function () {
@@ -71,6 +76,24 @@ function openInvitePage() {
     $(".invitePage").fadeIn();
     openPage = true;
     console.log(openPage);
+}
+
+function openInvitePageFromPicnic() {
+    $(".picnicPage").fadeOut();
+    $(".picnicPage").hide();
+    $(".invitePage").fadeIn();
+    openPage = true;
+    console.log(openPage);
+    activityTitle = String(document.getElementById("activityTitle").innerHTML);
+    activityWeather = String(document.getElementById("activityWeather").innerHTML);
+    activityDriveLength = String(document.getElementById("activityDriveLength").innerHTML);
+    activityTime = document.getElementById("time").value;
+    activityLocation = document.getElementById("location").value;
+    $("#invActTitle").replaceWith(activityTitle);
+    document.getElementById("invActLocation").innerHTML = activityLocation;
+    document.getElementById("invActTime").innerHTML = activityTime;
+    document.getElementById("invActWeather").innerHTML = activityWeather;
+    document.getElementById("invActDrive").innerHTML = activityDriveLength;
 }
 
 // Initialize and add the map
