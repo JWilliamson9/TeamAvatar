@@ -194,7 +194,7 @@ function inviteFriend5() {
     } 
 }
 
-function invitedFriend6() {
+function inviteFriend6() {
     if (!invitedFriend6) {
         invitedFriend6 = true;
         document.getElementById("friend6").style.backgroundColor='#3f8fb4';
