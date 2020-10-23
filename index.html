@@ -51,7 +51,7 @@
       <!--Create Page-->
       <div id="mainBox" class="createPage" style="display: none">
         <h2>BreakTime</h2>
-        <h1 id="activityTitle" contenteditable="true">Activity Name...</h1>
+        <h1 id="activityTitle" style="margin-left: 15px;" contenteditable="true" onkeypress="return (this.innerText.length < 10)">Activity Name...</h1>
         <div id="map"></div>
         <div class="row">
           <div class="column img-with-text">
@@ -64,10 +64,10 @@
           </div>
           <div class="column img-with-text">
             <img src="src/images/car.png" alt="Car" style="width:50%">
-            <p id="activityDriveLength" contenteditable="true">15 Minute Drive</p>
+            <p id="activityDriveLength" contenteditable="true">15 minute drive</p>
           </div>
         </div>
-        <form>
+        <form style="margin: 0px 15px;">
           <label for="location">Location:</label><input type="text" placeholder="Enter a location..." value="" id="location" name="location">
           <label for="time">Time:</label><input type="text" placeholder="Enter a time..." value="" id="time" name="time">
           <label for="need">You'll Need:</label><input type="text"  placeholder="Enter any items needed..." value="" id="need" name="need">
@@ -88,7 +88,7 @@
       <!--Picnic Page-->
       <div id="mainBox" class="picnicPage" style="display: none">
         <h2>BreakTime</h2>
-        <h1 id="activityTitlepic">Picnic</h1>
+        <h1 id="activityTitlepic" style="margin-left: 15px;">Picnic</h1>
         <div id="map2"></div>
         <div class="row">
           <div class="column img-with-text">
@@ -101,10 +101,10 @@
           </div>
           <div class="column img-with-text">
             <img src="src/images/car.png" alt="Car" style="width:50%">
-            <p id="activityDriveLengthpic">10 Minute Drive</p>
+            <p id="activityDriveLengthpic">10 minute drive</p>
           </div>
         </div>
-        <form>
+        <form style="margin: 0px 15px;">
           <label for="locationpic">Location:</label><input type="text" value="Mt Coot-tha Gardens" id="locationpic" name="locationpic">
           <label for="timepic">Time:</label><input type="text" value="3:00pm" id="timepic" name="timepic">
           <label for="needpic">You'll Need:</label><input type="text"  value="Picnic Basket, Blanket and Food" id="needpic" name="needpic">

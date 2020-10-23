@@ -339,3 +339,7 @@ border: none;
   overflow: auto;
   height: 335px;
 }
+
+#activityTitle {
+  margin-left: 15px;
+}
