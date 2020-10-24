@@ -54,6 +54,12 @@ function inviteClose() {
     console.log(openPage);
 }
 
+function calClose() {
+    $(".calendarPage").fadeOut();
+    openPage = false;
+    console.log(openPage);
+}
+
 function openCreatePage() {
     $(".createPage").fadeIn();
     $(".awarePage").fadeOut();
