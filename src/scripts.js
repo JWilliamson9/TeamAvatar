@@ -21,7 +21,7 @@ $(document).ready(function () {
     
     function checkPageOpen() {
         if (!openPage) {
-            $(".awarePage").fadeIn();
+            $(".awarePage").slideDown();
             openPage = true;
             console.log(openPage);
         } else {
