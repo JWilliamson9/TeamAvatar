@@ -12,9 +12,6 @@ var activityDriveLength = "11 minute drive";
 var activityTime = "12:00pm";
 var activityLocation = "My House";
 
-$(".phonecallScreen")
-
-
 $(document).ready(function () {
 
     console.log(openPage);
