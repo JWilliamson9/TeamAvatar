@@ -29,10 +29,9 @@
             <li>called <b>13 loved ones for twenty minutes</b></li>
             <li>watched <b>The Office (US) - Season 1 twice</b></li>
           </ul>
-          <p style="text-align: center; margin-bottom: 5px;">So why not take a break?</p>
-          <p style="text-align: center; margin-bottom: 5px;" class="pSmall">For more information on social media addictions <a href="https://www.addictioncenter.com/drugs/social-media-addiction/" target="_blank" alt="smartphone addiction information" style="text-decoration: underline;">click here</a></p>
-          <p class="pSmall" style="text-align: center;">Select an activity to begin</p>
-          <p class="pSmall" style="text-align: center;"><br><b>Solo Activities</b></p>
+          <p style="text-align: center; margin-bottom: 10px;">So why not take a break?</p>
+          <p style="text-align: center; font-weight: 400;" class="pSmall">For more information on social media addictions <a href="https://www.addictioncenter.com/drugs/social-media-addiction/" target="_blank" alt="smartphone addiction information" style="text-decoration: underline;">click here</a></p>
+          <p style="text-align: center; margin-top: 30px;"><b>Choose a solo activity</b></p>
           <div class="row">
             <div onclick="openJackPage()" class="column img-with-text picnicHover">
               <img src="src/images/jumpingjacks.png" alt="Jumping Jacks" style="width:100%;">
@@ -48,7 +47,7 @@
             </div>
           </div>
           <br>
-          <p class="pSmall" id="soloHeader" style="text-align: center;"><br><b>Social Activities</b></p>
+          <p id="soloHeader" style="text-align: center; margin-top: 85px;"><b>Choose a social activity</b></p>
           <div class="row">
             <div onclick="openPicnicPage()" class="column img-with-text picnicHover">
               <img src="src/images/picnic.jpg" alt="Picnic" style="width:100%">
@@ -130,7 +129,7 @@
       <!--Picnic Page-->
       <div id="mainBox" class="picnicPage" style="display: none">
         <h2>BreakTime</h2>
-        <h1 id="activityTitlepic" style="margin-left: 15px;">Picnic</h1>
+        <h1 id="activityTitlepic" style="margin-left: 15px;" contenteditable="true">Picnic</h1>
         <div id="map2"></div>
         <div class="row">
           <div class="column img-with-text">
@@ -180,6 +179,7 @@
               </div>
               <div id="friendInvBox">
                 <h1 style="font-size: 26px; margin-bottom: 5px;">Friends</h1>
+                <div id="friendSearch" contenteditable="true"><p>Search...</p></div>
                 <div class="friendList">
                   <div class="friendRecord">
                     <img class="avatarPic" src="src/images/avatarDarkBlue.png" id="friendPic1">
