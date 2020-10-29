@@ -36,6 +36,12 @@ function awareClose() {
     console.log(openPage);
 }
 
+function jackClose() {
+    $(".jumpPage").fadeOut();
+    openPage = false;
+    console.log(openPage);
+}
+
 function createClose() {
     $(".createPage").fadeOut();
     openPage = false;
@@ -57,6 +63,14 @@ function inviteClose() {
 function calClose() {
     $(".calendarPage").fadeOut();
     openPage = false;
+    console.log(openPage);
+}
+
+function openJackPage() {
+    $(".jumpPage").fadeIn();
+    $(".awarePage").fadeOut();
+    $(".awarePage").hide();
+    openPage = true;
     console.log(openPage);
 }
 
