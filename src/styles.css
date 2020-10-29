@@ -192,6 +192,13 @@ p {
   float: right;
 }
 
+#calMiniMap {
+  height: 110px;
+  width: 110px;
+  text-align: center;
+  float: right;
+}
+
 #friendInvBox {
   height: 380px;
   width: 300px;

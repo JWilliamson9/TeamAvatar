@@ -158,6 +158,17 @@ function initMap() {
         map: miniMap,
     });
 
+    const calMiniMap = new google.maps.Map(document.getElementById("calMiniMap"), {
+        zoom: 3,
+        center: auscentre,
+    });
+    
+    // The create your own  activity map marker, positioned at the centre of Australia
+    const calMiniMarker = new google.maps.Marker({
+        position: auscentre,
+        map: calMiniMap,
+    });
+
     // The location of Brisbane Botantical Gardens
     const botgardensbris = { lat: -27.475892, lng: 152.975028 };
     // The map, centered at Brisbane Botantical Gardens
