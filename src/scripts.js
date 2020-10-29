@@ -129,6 +129,10 @@ function openInvitePageFromLunch() {
 function openCalPage() {
     $(".invitePage").fadeOut();
     $(".invitePage").hide();
+    $(".lunchPage").fadeOut();
+    $(".lunchPage").hide();
+    $(".createPage").fadeOut();
+    $(".createPage").hide();
     document.getElementById("calSummaryPics").innerHTML = document.getElementById("summaryPics").innerHTML
     $(".calendarPage").fadeIn();
     openPage = true;
