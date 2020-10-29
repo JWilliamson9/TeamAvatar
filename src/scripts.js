@@ -48,8 +48,8 @@ function createClose() {
     console.log(openPage);
 }
 
-function picnicClose() {
-    $(".picnicPage").fadeOut();
+function lunchClose() {
+    $(".lunchPage").fadeOut();
     openPage = false;
     console.log(openPage);
 }
@@ -82,10 +82,10 @@ function openCreatePage() {
     console.log(openPage);
 }
 
-function openPicnicPage() {
+function openLunchPage() {
     $(".awarePage").fadeOut();
     $(".awarePage").hide();
-    $(".picnicPage").fadeIn();
+    $(".lunchPage").fadeIn();
     openPage = true;
     console.log(openPage);
 }
@@ -108,9 +108,9 @@ function openInvitePage() {
     document.getElementById("invActDrive").innerHTML = activityDriveLength;
 }
 
-function openInvitePageFromPicnic() {
-    $(".picnicPage").fadeOut();
-    $(".picnicPage").hide();
+function openInvitePageFromLunch() {
+    $(".lunchPage").fadeOut();
+    $(".lunchPage").hide();
     $(".invitePage").fadeIn();
     openPage = true;
     console.log(openPage);
@@ -183,17 +183,17 @@ function initMap() {
         map: calMiniMap,
     });
 
-    // The location of Brisbane Botantical Gardens
-    const botgardensbris = { lat: -27.475892, lng: 152.975028 };
-    // The map, centered at Brisbane Botantical Gardens
-    const map2 = new google.maps.Map(document.getElementById("map2"), {
-        zoom: 16,
-        center: botgardensbris,
+    // The location of The Coffee - Club Brisbane Square
+    const ccbs = { lat: -27.471111, lng: 153.022514 };
+    // The map, centered at The Coffee - Club Brisbane Square
+    const lunchMap = new google.maps.Map(document.getElementById("lunchMap"), {
+        zoom: 18,
+        center: ccbs,
     });
     // The marker, positioned at Mt Coot-tha Botatnical Gardens
     const marker2 = new google.maps.Marker({
-        position: botgardensbris,
-        map: map2,
+        position: ccbs,
+        map: lunchMap,
     });
 }
 

@@ -213,7 +213,7 @@ p {
   cursor: pointer;
 }
 
-.picnicHover:hover {
+.lunchHover:hover {
   background-color: #52A4C1;
   cursor: pointer;
 }
@@ -305,8 +305,8 @@ p {
   margin: 0 auto;
 }
 
-/* Title for picnic page */
-.picnic-h3 {
+/* Title for lunch page */
+.lunch-h3 {
   margin: 0%;
   padding-left: 2%;
   font-family: 'Open Sans', 'Segoe UI', sans-serif;
@@ -347,7 +347,7 @@ border: none;
   /* The width is the width of the web page */
 }
 
-#map2 {
+#lunchMap {
   height: 200px;
   /* The height is 200 pixels */
   width: 100%;

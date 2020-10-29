@@ -34,7 +34,7 @@
           <p class="pSmall" style="text-align: center;">Select an activity to begin</p>
           <p class="pSmall" style="text-align: center;"><br><b>Solo Activities</b></p>
           <div class="row">
-            <div onclick="openJackPage()" class="column img-with-text picnicHover">
+            <div onclick="openJackPage()" class="column img-with-text lunchHover">
               <img src="src/images/jumpingjacks.png" alt="Jumping Jacks" style="width:100%;">
               <p style="font-size: 15px;">20 Jumping Jacks</p>
             </div>
@@ -50,9 +50,9 @@
           <br>
           <p class="pSmall" id="soloHeader" style="text-align: center;"><br><b>Social Activities</b></p>
           <div class="row">
-            <div onclick="openPicnicPage()" class="column img-with-text picnicHover">
-              <img src="src/images/picnic.jpg" alt="Picnic" style="width:100%">
-              <p style="font-size: 15px;">Picnic</p>
+            <div onclick="openLunchPage()" class="column img-with-text lunchHover">
+              <img src="src/images/lunch.jpg" alt="Food" style="width:100%">
+              <p style="font-size: 15px;">Grab Lunch</p>
             </div>
             <div class="column img-with-text">
               <img src="src/images/beachwalk.jpg" alt="Beach Walk" style="width:100%">
@@ -127,18 +127,18 @@
         </div>
       </div>
 
-      <!--Picnic Page-->
-      <div id="mainBox" class="picnicPage" style="display: none">
+      <!--Lunch Page-->
+      <div id="mainBox" class="lunchPage" style="display: none">
         <h2>BreakTime</h2>
-        <h1 id="activityTitlepic" style="margin-left: 15px;">Picnic</h1>
-        <div id="map2"></div>
+        <h1 id="activityTitlepic" style="margin-left: 15px;">Grab Lunch</h1>
+        <div id="lunchMap"></div>
         <div class="row">
           <div class="column img-with-text">
             <img src="src/images/SunnyCloudy.png" alt="Sun with Cloud" style="width:50%">
             <p id="activityWeatherpic">Partly Cloudy</p>
           </div>
           <div class="column img-with-text">
-            <img src="src/images/Picnic.png" alt="Picnic Symbol" style="width:50%">
+            <img src="src/images/menu.svg" alt="Food Symbol" style="width:50%">
             <p>Sitting</p>
           </div>
           <div class="column img-with-text">
@@ -147,19 +147,19 @@
           </div>
         </div>
         <form style="margin: 0px 15px;">
-          <label for="locationpic">Location:</label><input type="text" value="Mt Coot-tha Gardens" id="locationpic" name="locationpic">
-          <label for="timepic">Time:</label><input type="text" value="3:00pm" id="timepic" name="timepic">
-          <label for="needpic">You'll Need:</label><input type="text"  value="Picnic Basket, Blanket and Food" id="needpic" name="needpic">
-          <label for="optionalpic">Optional:</label><input type="text" value="Speaker" id="optionalpic" name="optionalpic">
+          <label for="locationpic">Location:</label><input type="text" value="The Coffee Club - Brisbane Square" id="locationpic" name="locationpic">
+          <label for="timepic">Time:</label><input type="text" value="1:00pm" id="timepic" name="timepic">
+          <label for="needpic">You'll Need:</label><input type="text"  value="Wallet" id="needpic" name="needpic">
+          <label for="optionalpic">Optional:</label><input type="text" value="Keys or Go Card" id="optionalpic" name="optionalpic">
           <textarea id="message" maxLength="100" placeholder="Add a message..."></textarea>
         </form>
-          <div onclick="openInvitePageFromPicnic()" class="wideActivityButton" id="inviteFriendsButton">
+          <div onclick="openInvitePageFromLunch()" class="wideActivityButton" id="inviteFriendsButton">
           <span>Invite your friends!</b></span>
         </div>
         <div class="wideActivityButton" id="meTimeButton">
           <span>Have some me time!</b></span>
         </div>
-        <div onclick="picnicClose()" class="closeButton">
+        <div onclick="lunchClose()" class="closeButton">
           <span>Close</span>
         </div>
       </div>
