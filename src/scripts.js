@@ -129,6 +129,18 @@ function openInvitePageFromLunch() {
 function openCalPage() {
     $(".invitePage").fadeOut();
     $(".invitePage").hide();
+    document.getElementById("calSummaryPics").innerHTML = document.getElementById("summaryPics").innerHTML
+    $(".calendarPage").fadeIn();
+    openPage = true;
+    console.log(openPage);
+    document.getElementById("calActTitle").innerHTML = activityTitle;
+    document.getElementById("calActLocation").innerHTML = activityLocation;
+    document.getElementById("calActTime").innerHTML = activityTime;
+    document.getElementById("calActWeather").innerHTML = activityWeather;
+    document.getElementById("calActDrive").innerHTML = activityDriveLength;
+}
+
+function openCalPageFromMeTime() {
     $(".lunchPage").fadeOut();
     $(".lunchPage").hide();
     $(".createPage").fadeOut();
@@ -137,6 +149,32 @@ function openCalPage() {
     $(".calendarPage").fadeIn();
     openPage = true;
     console.log(openPage);
+    activityTitle = String(document.getElementById("activityTitle").innerHTML);
+    activityWeather = String(document.getElementById("activityWeather").innerHTML);
+    activityDriveLength = String(document.getElementById("activityDriveLength").innerHTML);
+    activityTime = document.getElementById("time").value;
+    activityLocation = document.getElementById("location").value;
+    document.getElementById("calActTitle").innerHTML = activityTitle;
+    document.getElementById("calActLocation").innerHTML = activityLocation;
+    document.getElementById("calActTime").innerHTML = activityTime;
+    document.getElementById("calActWeather").innerHTML = activityWeather;
+    document.getElementById("calActDrive").innerHTML = activityDriveLength;
+}
+
+function openCalPageFromMeTimeFromLunch() {
+    $(".lunchPage").fadeOut();
+    $(".lunchPage").hide();
+    $(".createPage").fadeOut();
+    $(".createPage").hide();
+    document.getElementById("calSummaryPics").innerHTML = document.getElementById("summaryPics").innerHTML
+    $(".calendarPage").fadeIn();
+    openPage = true;
+    console.log(openPage);
+    activityTitle = String(document.getElementById("activityTitlepic").innerHTML);
+    activityWeather = String(document.getElementById("activityWeatherpic").innerHTML);
+    activityDriveLength = String(document.getElementById("activityDriveLengthpic").innerHTML);
+    activityTime = document.getElementById("timepic").value;
+    activityLocation = document.getElementById("locationpic").value;
     document.getElementById("calActTitle").innerHTML = activityTitle;
     document.getElementById("calActLocation").innerHTML = activityLocation;
     document.getElementById("calActTime").innerHTML = activityTime;
