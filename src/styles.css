@@ -213,7 +213,7 @@ p {
   cursor: pointer;
 }
 
-.lunchHover:hover {
+.activityHover:hover {
   background-color: #52A4C1;
   cursor: pointer;
 }
@@ -354,7 +354,6 @@ border: none;
   /* The width is the width of the web page */
 }
 
-
 .friendName {
   font-size: 14px;
   display: inline-block;
@@ -416,4 +415,21 @@ border: none;
   font-size: 20px;
   border-radius: 12px;
   background-color:rgb(240, 240, 240);
+}
+
+.phoneButton {
+  display: block;
+  margin: 0 auto;
+}
+
+.phoneCallScreen {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden
+}
+.phoneCallScreen img {
+  flex-shrink: 0;
+  height: 840px;
+  width: 382px;
 }

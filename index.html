@@ -33,7 +33,7 @@
           <p style="text-align: center; font-weight: 400;" class="pSmall">For more information on social media addictions <a href="https://www.addictioncenter.com/drugs/social-media-addiction/" target="_blank" alt="smartphone addiction information" style="text-decoration: underline;">click here</a></p>
           <p style="text-align: center; margin-top: 30px;"><b>Choose a solo activity</b></p>
           <div class="row">
-            <div onclick="openJackPage()" class="column img-with-text lunchHover">
+            <div onclick="openJackPage()" class="column img-with-text activityHover">
               <img src="src/images/jumpingjacks.png" alt="Jumping Jacks" style="width:100%;">
               <p style="font-size: 14px;">20 Jumping Jacks</p>
             </div>
@@ -46,14 +46,13 @@
               <p style="font-size: 14px;">Reading</p>
             </div>
           </div>
-          <br>
           <p id="soloHeader" style="text-align: center; margin-top: 85px;"><b>Choose a social activity</b></p>
           <div class="row">
-            <div onclick="openLunchPage()" class="column img-with-text lunchHover">
+            <div onclick="openLunchPage()" class="column img-with-text activityHover">
               <img src="src/images/lunch.jpg" alt="Food" style="width:100%">
               <p style="font-size: 14px;">Grab Lunch</p>
             </div>
-            <div class="column img-with-text">
+            <div onclick="openCallPage()" class="column img-with-text activityHover"> 
               <img src="src/images/call.jpg" alt="Phone Call" style="width:100%">
               <p style="font-size: 14px;">Call a friend</p>
             </div>
@@ -162,6 +161,26 @@
           <span>Close</span>
         </div>
       </div>
+
+      <!--Call a Friend Page-->
+      <div id="mainBox" class="callPage" style="display: none">
+        <h2>BreakTime</h2>
+        <h1 style="margin-left: 15px; margin-bottom: 20px;">Call a Friend</h1>
+        <div class="jumpText">
+          <p id="jumpTextSpace"><b>1.</b> Decide on a friend or family member to call.</p>
+          <p id="jumpTextSpace"><b>2.</b> Click the phone button below to go to your device's phone.</p>
+          <p id="jumpTextSpace"><b>3.</b> Enter their phone number or tap their contact name</p>
+          <img onclick="openPhoneCall()" class="phoneButton" src="src/images/phonecallbutton.png" alt="Phone Call Button" style="width:60%">
+        </div>
+        <div onclick="callClose()" class="closeButton">
+          <span>Done</span>
+        </div>
+      </div>
+      
+      <!--Phone Call Open Screen-->
+      <div id="mainBox" class="phoneCallScreen" style="display: none">
+        <img src="src/images/phonecallscreen.jpg">
+      </div>  
 
       <!--Invite Page-->
             <div id="mainBox" class="invitePage" style="display: none">

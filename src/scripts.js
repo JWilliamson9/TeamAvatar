@@ -12,11 +12,18 @@ var activityDriveLength = "11 minute drive";
 var activityTime = "12:00pm";
 var activityLocation = "My House";
 
+$(".phonecallScreen")
+
 
 $(document).ready(function () {
 
     console.log(openPage);
-    setInterval(checkPageOpen, 8000);
+
+    var min = 20,
+        max = 40;
+
+    var rand = Math.floor(Math.random() * (max - min + 1) + min);
+    setInterval(checkPageOpen, rand * 1000);
 
     
     function checkPageOpen() {
@@ -38,6 +45,12 @@ function awareClose() {
 
 function jackClose() {
     $(".jumpPage").fadeOut();
+    openPage = false;
+    console.log(openPage);
+}
+
+function callClose() {
+    $(".callPage").fadeOut();
     openPage = false;
     console.log(openPage);
 }
@@ -68,6 +81,24 @@ function calClose() {
 
 function openJackPage() {
     $(".jumpPage").fadeIn();
+    $(".awarePage").fadeOut();
+    $(".awarePage").hide();
+    openPage = true;
+    console.log(openPage);
+}
+
+function openPhoneCall() {
+    $(".phoneCallScreen").fadeIn();
+    openPage = true;
+    console.log(openPage);
+
+    setTimeout(function() {
+        $(".phoneCallScreen").fadeOut();
+    }, 5000);
+}
+
+function openCallPage() {
+    $(".callPage").fadeIn();
     $(".awarePage").fadeOut();
     $(".awarePage").hide();
     openPage = true;
