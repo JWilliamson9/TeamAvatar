@@ -30,7 +30,7 @@
           <div class="row">
             <div onclick="openJackPage()" class="column img-with-text picnicHover">
               <img src="src/images/jumpingjacks.png" alt="Jumping Jacks" style="width:100%;">
-              <p style="font-size: 15px;">10 Jumping Jacks</p>
+              <p style="font-size: 15px;">20 Jumping Jacks</p>
             </div>
             <div class="column img-with-text">
               <img src="src/images/breathing.jpg" alt="Breathing Exercise" style="width:100%">
@@ -48,7 +48,7 @@
               <img src="src/images/picnic.jpg" alt="Picnic" style="width:100%">
               <p style="font-size: 15px;">Picnic</p>
             </div>
-            <div onclick="openJackPage()" class="column img-with-text">
+            <div class="column img-with-text">
               <img src="src/images/beachwalk.jpg" alt="Beach Walk" style="width:100%">
               <p style="font-size: 15px;">Beach Walk</p>
             </div>
@@ -69,13 +69,14 @@
       <!--JumpingJacks Page-->
       <div id="mainBox" class="jumpPage" style="display: none">
         <h2>BreakTime</h2>
-        <h1 style="margin-left: 15px;">Jumping Jacks</h1>
+        <h1 style="margin-left: 15px; margin-bottom: 20px;">Jumping Jacks</h1>
+        <img src="src/images/jumpingjackstutorial.png" alt="Jumping Jacks" style="width:75%; display: block; margin: 0 auto;">
         <div class="jumpText">
-          <p><b>1.</b> Stand upright with your legs together, arms at your sides.</p>
-          <p><b>2.</b> Bend your knees slightly, and jump into the air.</p>
-          <p><b>3.</b> As you jump, spread your legs to be about shoulder-width apart. Stretch your arms out and over your head.</p>
-          <p><b>4.</b> Jump back to starting position.</p>
-          <p><b>5.</b> Repeat.</p>
+          <p id="jumpTextSpace"><b>1.</b> Stand upright with your legs together, arms at your sides.</p>
+          <p id="jumpTextSpace"><b>2.</b> Bend your knees slightly, and jump into the air.</p>
+          <p id="jumpTextSpace"><b>3.</b> As you jump, spread your legs to be about shoulder-width apart. Stretch your arms out and over your head.</p>
+          <p id="jumpTextSpace"><b>4.</b> Jump back to starting position.</p>
+          <p id="jumpTextSpace"><b>5.</b> Repeat 20 times.</p>
           <p class="pSmall"><br>For more quick home exercises <a href="https://www.nhs.uk/live-well/exercise/10-minute-workouts/?tabname=how-much-exercise" target="_blank" alt="exerciseLink" style="text-decoration: underline;">click here</a></p>
         </div>
         <div onclick="jackClose()" class="closeButton">

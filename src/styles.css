@@ -80,6 +80,10 @@ p {
   padding: 0px 30px;
 }
 
+#jumpTextSpace {
+  margin-top: 10px;
+}
+
 .timeText {
   font-size: 28px;
   font-weight: 700;
