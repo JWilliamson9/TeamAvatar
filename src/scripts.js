@@ -16,7 +16,7 @@ var activityLocation = "My House";
 $(document).ready(function () {
 
     console.log(openPage);
-    setInterval(checkPageOpen, 8000)
+    setInterval(checkPageOpen, 8000);
 
     
     function checkPageOpen() {
