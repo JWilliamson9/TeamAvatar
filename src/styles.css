@@ -69,7 +69,15 @@ p {
   font-weight: 300;
   font-size: 20px;
   padding: 0px 30px;
+}
 
+.jumpText {
+  margin: auto;
+  width: fit-content;
+  font-family: 'Open Sans', 'Segoe UI', sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  padding: 0px 30px;
 }
 
 .timeText {
@@ -140,7 +148,7 @@ p {
   text-align: center;
   padding: 11px 0px;
   margin: auto;
-  margin-top: 120px;
+  margin-top: 110px;
   position: relative;
   font-family: 'Open Sans', 'Segoe UI', sans-serif;
   font-weight: 300;
@@ -184,6 +192,11 @@ p {
 }
 
 .wideButton:hover {
+  background-color: #52A4C1;
+  cursor: pointer;
+}
+
+.wideButton2:hover {
   background-color: #52A4C1;
   cursor: pointer;
 }
@@ -380,4 +393,8 @@ border: none;
 
 #addCalButton {
   margin-top: 5px;
+}
+
+#soloHeader {
+ margin-top: 80px;
 }
