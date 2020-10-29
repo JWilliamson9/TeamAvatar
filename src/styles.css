@@ -73,15 +73,15 @@ p {
 }
 
 .timeText {
-  font-size: 44px;
+  font-size: 28px;
   font-weight: 700;
   line-height: 0.8;
-  margin: 15px 0px;
+  margin: 10px 0px;
 }
 
 .summaryText {
   font-weight: 300;
-  font-size: 14px;
+  font-size: 10px;
   margin: 0%;
   color: #6f6f6f;
 }
@@ -90,7 +90,7 @@ p {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 100px;
+  width: 50px;
 }
 
 .closeButton {
@@ -123,6 +123,24 @@ p {
   padding: 11px 0px;
   margin: auto;
   margin-top: 160px;
+  position: relative;
+  font-family: 'Open Sans', 'Segoe UI', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  background-color: #5AC8FA;
+  border-radius: 5px;
+  z-index: 1000;
+  box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 5px 0 rgba(0, 0, 0, 0.19);
+  transition-duration: 0.4s;
+  color: white;
+}
+
+.wideButton2 {
+  width: 300px;
+  text-align: center;
+  padding: 11px 0px;
+  margin: auto;
+  margin-top: 120px;
   position: relative;
   font-family: 'Open Sans', 'Segoe UI', sans-serif;
   font-weight: 300;
