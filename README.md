@@ -7,6 +7,7 @@
 # Chloe Tan (s4485133) - https://github.com/tannyc
 
 Prototype: https://s4477841.uqcloud.net
+
 Wiki (includes all documentation and visual materials): https://github.com/JWilliamson9/TeamAvatar/wiki
 
 Instructions on how to use our application, 'BreakTime':
