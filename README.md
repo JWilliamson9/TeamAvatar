@@ -20,6 +20,6 @@ Instructions on how to use our application, 'BreakTime':
 
 OR to use from github:
 
-1. Download files from github TeamAvatar repository
+1. Download all files from github TeamAvatar repository
 2. Once downloaded, open the index.html page with your browser (e.g. Chrome)
 3. Scroll through Facebook and enjoy the application
