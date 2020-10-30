@@ -6,6 +6,9 @@
 # Andrew Shaw (s44887401) - https://github.com/andrewshaw23 
 # Chloe Tan (s4485133) - https://github.com/tannyc
 
+Prototype: https://s4477841.uqcloud.net
+Wiki (includes all documentation and visual materials): 
+
 Instructions on how to use our application, 'BreakTime':
 
 1. Visit https://s4477841.uqcloud.net in your internet browser (e.g. Chrome).
