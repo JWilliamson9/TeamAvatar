@@ -7,7 +7,7 @@
 # Chloe Tan (s4485133) - https://github.com/tannyc
 
 Prototype: https://s4477841.uqcloud.net
-Wiki (includes all documentation and visual materials): 
+Wiki (includes all documentation and visual materials): https://github.com/JWilliamson9/TeamAvatar/wiki
 
 Instructions on how to use our application, 'BreakTime':
 
@@ -21,4 +21,4 @@ OR to use from github:
 
 1. Download files from github TeamAvatar repository
 2. Once downloaded, open the index.html page with your browser (e.g. Chrome)
-3. Scroll through Facebook and aenjoy the application
+3. Scroll through Facebook and enjoy the application
