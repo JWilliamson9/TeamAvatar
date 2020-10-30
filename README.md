@@ -8,9 +8,9 @@
 
 Instructions on how to use our application, 'BreakTime':
 
-1. Visit s4477841.uqcloud.net in your internet browser (e.g. Chrome).
+1. Visit https://s4477841.uqcloud.net in your internet browser (e.g. Chrome).
 2. Log in with your UQ log in details
-3. Select 'Allow s4477841-s4477841.uqcloud.net to receive information about me' or chose the option below
+3. Select 'Allow s4477841.uqcloud.net to receive information about me' or chose the option below
 4. Press Continue
 5. Scroll through Facebook and enjoy the application
 
